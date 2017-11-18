@@ -332,7 +332,7 @@ video {
 .echo h6 {
   font-weight: normal;
   line-height: 1.5;
-  margin: 1.6em 0;
+  margin: 0 0;
 }
 .echo h1 {
   font-size: 30px;
@@ -356,8 +356,8 @@ video {
   margin: 1em 0;
   font-size: 16px;
   font-size: 1rem;
-  text-align: justify;
-  line-height: 1.8;
+  text-align: left;
+  line-height: 1.5;
 }
 .echo address,
 .echo blockquote,
@@ -373,9 +373,9 @@ video {
   margin: 1.6em 0;
 }
 .echo hr {
-  margin: 1.6em auto;
-  width: 61%;
-  height: 4px;
+  margin: auto auto;
+  width: 80%;
+  height: 2px;
   border: none;
   background: #eee;
 }
@@ -449,11 +449,8 @@ video {
 .echo blockquote {
   margin: 1.6em -50px;
   padding: 10px 45px;
-  border-left: 8px solid #399c9c;
+  border-left: 8px solid #666;
   border-right: 0;
-  border-top: 1px solid #f0f0f0;
-  border-bottom: 1px solid #f0f0f0;
-  background-color: #fefefe;
 }
 .echo blockquote.right {
   border-left: 0;
@@ -594,6 +591,7 @@ video {
 .head-title > a:hover {
   color: #d98785;
   text-decoration: none;
+  text-shadow: 1px 1px 1px #666;
 }
 .head-nav__item {
   display: inline-block;
@@ -609,6 +607,7 @@ video {
 .head-nav__link:hover {
   color: #d98785;
   text-decoration: none;
+  text-shadow: 1px 1px 1px #666;
 }
 .main {
   margin-top: 30px;
@@ -708,6 +707,12 @@ video {
   border: 0px solid #f0f0f0;
   background-color: #d99d9b;
 }
+.post.a:hover {
+  background-color: #fff;
+  background-image: url("/img/me.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
 .post__head {
   margin: 50px;
 }
@@ -716,6 +721,7 @@ video {
 }
 .post__time {
   color: #ccc;
+  font-family: 'icon';
   font-size: 12px;
   font-size: 0.75rem;
 }
@@ -725,14 +731,16 @@ video {
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: normal;
+  font-family: 'icon';
+  color: #666;
 }
 .post__title > a {
   color: #666;
+  text-shadow: 1px 1px 1px #ddd;
   transition: all 0.3s;
 }
 .post__title > a:hover {
-  color: #9c396b;
-  text-shadow: 1px 1px 1px #ddd;
+  color: #741e1c;
 }
 .post__image {
   display: block;
@@ -740,6 +748,9 @@ video {
 }
 .post__main {
   margin-top: 50px;
+  margin-right: 0px;
+  font-family: 'icon';
+  color: #000;
 }
 .post__main .headerlink {
   display: inline-block;
@@ -938,7 +949,7 @@ video {
    ========================================================================== */
 @media (max-width: 1023px) {
   html {
-    background: #741e1c;
+    background: #fff;
   }
   .head {
     margin-top: 80px;
