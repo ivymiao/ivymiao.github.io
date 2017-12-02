@@ -214,7 +214,7 @@ html {
   text-rendering: optimizeLegibility;
 }
 html.index {
-  background-color: #d99d9b;
+  background-color: #fff;
 }
 body {
   font-size: 14px;
@@ -233,7 +233,7 @@ samp {
   font-family: 'Source Code Pro', Consolas, 'Liberation Mono', Courier, monospace, serif;
 }
 a {
-  color: #258fb8;
+  color: #bd3f41;
   text-decoration: none;
 }
 blockquote,
@@ -272,9 +272,11 @@ menu {
 }
 img,
 audio,
-canvas,
 video {
   vertical-align: middle;
+}
+canvas {
+  width: 100%;
 }
 .clearfix:after,
 .clearfix:before {
@@ -317,7 +319,7 @@ video {
   line-height: 1.5;
 }
 .echo a {
-  color: #258fb8;
+  color: #bd3f41;
 }
 .echo a:hover,
 .echo a:focus,
@@ -373,8 +375,8 @@ video {
   margin: 1.6em 0;
 }
 .echo hr {
-  margin: auto auto;
-  width: 80%;
+  margin: 10px auto;
+  width: 100%;
   height: 2px;
   border: none;
   background: #eee;
@@ -449,8 +451,11 @@ video {
 .echo blockquote {
   margin: 1.6em -50px;
   padding: 10px 45px;
-  border-left: 8px solid #666;
+  border-left: 8px solid #741e1c;
   border-right: 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #fefefe;
 }
 .echo blockquote.right {
   border-left: 0;
@@ -458,7 +463,7 @@ video {
 }
 .highlight {
   overflow: auto;
-  color: #399c9c;
+  color: #6a3325;
   border: 1px solid #f0f0f0;
 }
 .highlight .gutter {
@@ -684,7 +689,7 @@ video {
 .reward .btn-reward {
   padding: 10px 20px;
   background-color: #399c9c;
-  color: #d99d9b;
+  color: #fff;
   display: inline-block;
   transition: all 0.3s;
 }
@@ -704,8 +709,8 @@ video {
 .post {
   overflow: hidden;
   margin-top: 50px;
-  border: 0px solid #f0f0f0;
-  background-color: #d99d9b;
+  border: 1px solid #f0f0f0;
+  background-color: #fff;
 }
 .post.a:hover {
   background-color: #fff;
@@ -720,7 +725,7 @@ video {
   margin: 30px 50px;
 }
 .post__time {
-  color: #ccc;
+  color: #666;
   font-family: 'icon';
   font-size: 12px;
   font-size: 0.75rem;
@@ -732,15 +737,15 @@ video {
   font-size: 1.5rem;
   font-weight: normal;
   font-family: 'icon';
-  color: #666;
+  color: #741e1c;
 }
 .post__title > a {
-  color: #666;
+  color: #741e1c;
   text-shadow: 1px 1px 1px #ddd;
   transition: all 0.3s;
 }
 .post__title > a:hover {
-  color: #741e1c;
+  color: #666;
 }
 .post__image {
   display: block;
@@ -749,8 +754,7 @@ video {
 .post__main {
   margin-top: 50px;
   margin-right: 0px;
-  font-family: 'icon';
-  color: #000;
+  color: #666;
 }
 .post__main .headerlink {
   display: inline-block;
