@@ -220,7 +220,7 @@ body {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.5;
-  font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei', sans-serif;
+  font-family: sans-serif, 'Helvetica Neue', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', 'Microsoft Yahei';
   padding: 80px 0 20px;
 }
 html.index body {
