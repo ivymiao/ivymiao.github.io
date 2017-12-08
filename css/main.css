@@ -82,6 +82,7 @@ sub {
 }
 img {
   border: 0;
+  width: 100%;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -437,7 +438,7 @@ canvas {
   padding: 0 0.5em;
   border: 1px solid #f0f0f0;
   border-radius: 3px;
-  background-color: #d99d9b;
+  background-color: #fff;
   text-shadow: 0 1px 0 #fff;
   white-space: nowrap;
   font-size: 0.85em;
@@ -714,12 +715,16 @@ canvas {
 }
 .post.a {
   background-color: #d99d9b;
+  width: 100%;
 }
 .post.a:hover {
   background-color: #fff;
   background-image: url("/img/me.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+.post.b {
+  width: 100%;
 }
 .post__head {
   margin: 50px;
@@ -806,13 +811,13 @@ canvas {
 .post__foot {
   padding: 8px 50px;
   border-top: 1px solid #f0f0f0;
-  background-color: #d99d9b;
+  background-color: #fff;
 }
 .post__foot-link,
 .post__tag__link,
 .post__more {
   padding: 10px 15px 10px 0;
-  color: #3cb371;
+  color: #741e1c;
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -1042,6 +1047,7 @@ canvas {
   }
   .post__image img {
     margin: 0 auto;
+    width: 100%;
   }
   .foot {
     margin-bottom: 0;
