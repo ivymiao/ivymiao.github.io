@@ -1003,7 +1003,7 @@ canvas {
   }
   .head-title {
     font-size: 10px !important;
-    margin-top: 105px;
+    margin-top: 65px;
   }
   .main {
     margin-top: 20px;
@@ -1014,7 +1014,7 @@ canvas {
     text-align: center;
   }
   .head-nav {
-    margin-top: 105px;
+    margin-top: 65px;
   }
   .head-nav__item {
     margin: 0 5px;
