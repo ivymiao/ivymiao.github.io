@@ -989,7 +989,7 @@ canvas {
     line-height: inherit;
   }
   .head {
-    height: 40px !important;
+    height: 80px !important;
   }
   .head-title {
     float: left;
@@ -1002,7 +1002,7 @@ canvas {
     float: none;
   }
   .head-title {
-    font-size: 15px;
+    font-size: 12px;
     margin-top: 65px;
   }
   .main {
@@ -1019,7 +1019,7 @@ canvas {
   .head-nav__item {
     margin: 0 5px;
     margin-left: 0;
-    font-size: 15px;
+    font-size: 12px;
   }
   .post {
     margin-top: 100px;
