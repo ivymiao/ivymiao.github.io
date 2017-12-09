@@ -970,7 +970,7 @@ canvas {
     padding-top: 0;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 640px) {
   body {
     margin: 10px;
     margin-bottom: 20px;
@@ -989,7 +989,7 @@ canvas {
     line-height: inherit;
   }
   .head {
-    height: 80px !important;
+    height: 40px !important;
   }
   .head-title {
     float: left;
@@ -1002,8 +1002,8 @@ canvas {
     float: none;
   }
   .head-title {
-    font-size: 150%;
-    margin-top: 95px;
+    font-size: 15px;
+    margin-top: 65px;
   }
   .main {
     margin-top: 20px;
@@ -1014,12 +1014,12 @@ canvas {
     text-align: center;
   }
   .head-nav {
-    margin-top: 95px;
+    margin-top: 65px;
   }
   .head-nav__item {
     margin: 0 5px;
     margin-left: 0;
-    font-size: 150%;
+    font-size: 15px;
   }
   .post {
     margin-top: 100px;
