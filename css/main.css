@@ -1019,7 +1019,7 @@ canvas {
   .head-nav__item {
     margin: 0 5px;
     margin-left: 0;
-    font-size: 10px !important;
+    font-size: 1px !important;
   }
   .post {
     margin-top: 100px;
