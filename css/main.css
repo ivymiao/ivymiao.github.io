@@ -981,37 +981,45 @@ canvas {
   .head,
   .main,
   .foot {
-    width: 100%;
+    width: 90%;
   }
   .head,
   .foot {
     padding: 20px;
-    height: auto;
     line-height: inherit;
   }
-  .head-title,
-  .head-nav,
+  .head-title {
+    float: left;
+  }
+  .head-nav {
+    float: right;
+  }
   .foot-copy,
   .page-menu {
     float: none;
+  }
+  .head-title {
+    font-size: 150%;
+    margin-top: 95px;
   }
   .main {
     margin-top: 20px;
     margin-bottom: 20px;
   }
   .head {
-    margin-top: 20px;
+    margin-top: 80px;
     text-align: center;
   }
   .head-nav {
-    margin-top: 10px;
+    margin-top: 95px;
   }
   .head-nav__item {
     margin: 0 5px;
     margin-left: 0;
+    font-size: 150%;
   }
   .post {
-    margin-top: 20px;
+    margin-top: 100px;
   }
   .post__head.archive,
   .post__head {
