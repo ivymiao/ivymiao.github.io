@@ -1002,7 +1002,7 @@ canvas {
     float: none;
   }
   .head-title {
-    font-size: 10px !important;
+    font-size: 15px !important;
     margin-top: 65px;
   }
   .main {
@@ -1019,10 +1019,10 @@ canvas {
   .head-nav__item {
     margin: 0 5px;
     margin-left: 0;
-    font-size: 10px !important;
+    font-size: 15px !important;
   }
   .post {
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .post__head.archive,
   .post__head {
