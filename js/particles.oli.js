@@ -10,7 +10,7 @@ $(function () {
                 }
             },
             "color": {
-                "value": "#ffffff"
+                "value": "#BF6766"
             },
             "shape": {
                 "type": "circle",
@@ -50,7 +50,7 @@ $(function () {
             "line_linked": {
                 "enable": true,
                 "distance": 150,
-                "color": "#ffffff",
+                "color": "#BF6766",
                 "opacity": 0.6,
                 "width": 0.5
             },

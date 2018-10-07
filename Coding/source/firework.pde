@@ -6,13 +6,13 @@ class Circle{
   
   Circle(float x,float y){
     location=new PVector(x,y);
-    size=100;
+    size=30;
   }
   
   void update(){
     int labelx=int((location.x-mouseX)/abs(location.x-mouseX));
     int labely=int((location.y-mouseY)/abs(location.y-mouseY));
-    location.add(labelx*random(-10,25),labely*random(-10,25));
+    location.add(labelx*random(-20,20),labely*random(-20,20));
     size /=random(1.05,1.12);
   }
   
@@ -49,10 +49,14 @@ void setup(){
 
 void draw(){
   background(0);
-  float x=mouseX+random(-15,15);
-  float y=mouseY+random(-15,15);
-  Circle c=new Circle(x,y);
-  circles.add(c);
+  float x1=mouseX+random(-15,15);
+  float y1=mouseY+random(-15,15);
+  float x2=mouseX+random(-15,15);
+  float y2=mouseY+random(-15,15);
+  Circle c1=new Circle(x1,y1);
+  Circle c2=new Circle(x2,y2);
+  circles.add(c1);
+  circles.add(c2);
   for(int i=0;i<circles.size();i++){
     if(circles.get(i).size<1){
       circles.remove(i);
