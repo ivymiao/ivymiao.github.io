@@ -234,7 +234,7 @@ samp {
   font-family: 'Source Code Pro', Consolas, 'Liberation Mono', Courier, monospace, serif;
 }
 a {
-  color: #bd3f41;
+  color: #000;
   text-decoration: none;
 }
 blockquote,
@@ -306,6 +306,7 @@ canvas {
 }
 .u-fr {
   float: right;
+  margin-right: 100px;
 }
 .u-hidden {
   display: none !important;
@@ -320,7 +321,7 @@ canvas {
   line-height: 1.5;
 }
 .echo a {
-  color: #bd3f41;
+  color: #000;
 }
 .echo a:hover,
 .echo a:focus,
@@ -569,30 +570,31 @@ canvas {
   left: 0;
   right: 0;
   width: 100%;
-  background-color: #741e1c;
+  background-color: #eea9a9;
 }
 .head,
 .main {
   margin: 0 auto;
-  width: 665px;
+  width: 700px;
 }
 .head {
   padding: 0 0px;
   height: 120px;
-  background-image: url("/img/cat.png");
-  background-size: auto 100%;
+  background-color: #eea9a9;
+  background-image: url("/img/head.png");
+  background-size: 100% auto;
   box-sizing: border-box;
 }
 .head-title {
-  font-size: 30px;
-  font-size: 1.875rem;
-  font-family: 'icon';
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
-  margin-top: 110px;
-  color: #000;
+  margin-top: 92px;
+  margin-left: 80px;
+  color: #d98785;
 }
 .head-title > a {
-  color: #000;
+  color: #d98785;
 }
 .head-title > a:hover {
   color: #d98785;
@@ -600,15 +602,15 @@ canvas {
   text-shadow: 1px 1px 1px #666;
 }
 .head-nav__item {
+  padding: 0 20 0 0px;
   display: inline-block;
-  font-size: 28px;
-  font-size: 1.75rem;
-  margin-top: 110px;
-  margin-left: 20px;
-  font-family: 'icon';
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-top: 92px;
+  margin-left: 40px;
 }
 .head-nav__link {
-  color: #000;
+  color: #d98785;
 }
 .head-nav__link:hover {
   color: #d98785;
@@ -709,12 +711,12 @@ canvas {
 }
 .post {
   overflow: hidden;
-  margin-top: 50px;
+  margin-top: 30px;
   border: 1px solid #f0f0f0;
   background-color: #fff;
 }
 .post.a {
-  background-color: #d99d9b;
+  background-color: #fff;
   width: 100%;
 }
 .post.a:hover {
@@ -730,7 +732,7 @@ canvas {
   margin: 50px;
 }
 .post__head.archive {
-  margin: 30px 50px;
+  margin: 20px 50px;
 }
 .post__time {
   color: #666;
@@ -741,14 +743,14 @@ canvas {
 .post__title {
   margin-top: 5px;
   line-height: 1.5;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
   font-family: 'icon';
-  color: #741e1c;
+  color: #823030;
 }
 .post__title > a {
-  color: #741e1c;
+  color: #823030;
   text-shadow: 1px 1px 1px #ddd;
   transition: all 0.3s;
 }
@@ -757,10 +759,10 @@ canvas {
 }
 .post__image {
   display: block;
-  margin: 50px 0;
+  margin: 20px 0;
 }
 .post__main {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-right: 0px;
   color: #666;
 }
@@ -817,7 +819,7 @@ canvas {
 .post__tag__link,
 .post__more {
   padding: 10px 15px 10px 0;
-  color: #741e1c;
+  color: #823030;
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -829,7 +831,7 @@ canvas {
   display: block;
 }
 .post__tag__link:hover {
-  color: #9c396b;
+  color: #666;
 }
 .post__tag__link:before {
   content: "#";
