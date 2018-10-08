@@ -582,7 +582,7 @@ canvas {
   height: 120px;
   background-color: #eea9a9;
   background-image: url("/img/head.png");
-  background-size: 100% auto;
+  background-size: auto 100%;
   box-sizing: border-box;
 }
 .head-title {
