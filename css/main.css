@@ -580,9 +580,9 @@ canvas {
 .head {
   padding: 0 0px;
   height: 120px;
-  background-color: #eea9a9;
   background-image: url("/img/head.png");
-  background-size: auto 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   box-sizing: border-box;
 }
 .head-title {
@@ -987,14 +987,15 @@ canvas {
   }
   .head,
   .foot {
-    padding: 20px;
+    padding: 0px;
     line-height: inherit;
   }
   .head {
-    height: 80px !important;
+    height: 65px !important;
   }
   .head-title {
     float: left;
+    margin-left: 30px;
   }
   .head-nav {
     float: right;
@@ -1003,9 +1004,13 @@ canvas {
   .page-menu {
     float: none;
   }
+  .u-fr {
+    float: right;
+    margin-right: 30px;
+  }
   .head-title {
-    font-size: 15px !important;
-    margin-top: 65px;
+    font-size: 12px !important;
+    margin-top: 37px;
   }
   .main {
     margin-top: 20px;
@@ -1016,12 +1021,12 @@ canvas {
     text-align: center;
   }
   .head-nav {
-    margin-top: 65px;
+    margin-top: 35px;
   }
   .head-nav__item {
     margin: 0 5px;
     margin-left: 0;
-    font-size: 15px !important;
+    font-size: 12px !important;
   }
   .post {
     margin-top: 50px;
@@ -1038,8 +1043,8 @@ canvas {
     margin: 5px;
   }
   .post__title {
-    font-size: 22.4px;
-    font-size: 1.4rem;
+    font-size: 20px;
+    font-size: 1.25rem;
   }
   .post__main blockquote,
   .post__main .highlight {
