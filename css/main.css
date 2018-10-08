@@ -995,7 +995,7 @@ canvas {
   }
   .head-title {
     float: left;
-    margin-left: 30px;
+    margin-left: 40px;
   }
   .head-nav {
     float: right;
@@ -1006,11 +1006,11 @@ canvas {
   }
   .u-fr {
     float: right;
-    margin-right: 30px;
+    margin-right: 40px;
   }
   .head-title {
     font-size: 12px !important;
-    margin-top: 40px;
+    margin-top: 48px;
   }
   .main {
     margin-top: 20px;
@@ -1021,7 +1021,7 @@ canvas {
     text-align: center;
   }
   .head-nav {
-    margin-top: 38px;
+    margin-top: 45px;
   }
   .head-nav__item {
     margin: 0 5px;
