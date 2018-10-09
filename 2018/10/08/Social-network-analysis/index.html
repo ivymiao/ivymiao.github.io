@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="author" content="Xuanyi Yu"><link rel="alternative" href="/atom.xml" title="Ivy|ヾ(´∀`o)+" type="application/atom+xml"><link rel="icon" href="/img/logo.png"><title>Social Network Analysis of Weibo Hot Topics Based on Python - Ivy|ヾ(´∀`o)+</title><link rel="stylesheet" href="/css/main.css"><link rel="stylesheet" href="/js/fancybox/jquery.fancybox.min.css"><!--[if lt IE 9]><script>(function(a,b){a="abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video".split(" ");for(b=a.length-1;b>=0;b--)document.createElement(a[b])})()</script><![endif]--><script src="/js/jquery-3.1.1.min.js"></script><script src="/js/fancybox/jquery.fancybox.min.js"></script></head><body style="opacity:0;"><header class="head"><h1 class="head-title u-fl"><a href="/">Ivy|ヾ(´∀`o)+</a></h1><nav class="head-nav u-fr"><ul class="head-nav__list"><li class="head-nav__item"><a class="head-nav__link" href="/Coding">Coding</a></li><li class="head-nav__item"><a class="head-nav__link" href="/Design">Design</a></li><li class="head-nav__item"><a class="head-nav__link" href="/About">About me</a></li></ul></nav></header><main class="main"><article class="post b"><header class="post__head"><time class="post__time" datetime="2018-10-09T04:43:53.511Z">October 8, 2018</time><h1 class="post__title"><a href="/2018/10/08/Social-network-analysis/">Social Network Analysis of Weibo Hot Topics Based on Python</a></h1><div class="post__main echo"><p><a href="https://www.weibo.com" target="_blank" rel="external">Weibo</a>(Chinese Twitter), has many hot topics followed by millions of people. If we try to analyze the characteristics of the user groups who follow different hot topics, and the social relationships between these users in each group, we can get some very interesting findings. In this project, I chose a hot Weibo topic about a comic series to analyze. Check this topic here, <a href="https://m.weibo.cn/p/index?containerid=1008084e23511232171b5e94c135b3c4dc0006&amp;extparam=19%E5%A4%A9&amp;luicode=10000011&amp;lfid=1008084e23511232171b5e94c135b3c4dc0006_-_feed&amp;featurecode=20000320" target="_blank" rel="external">#19天</a>.</p>
+<ul>
+<li>Weibo hot topic #19天
+&lt;img src=&quot;https://i.postimg.cc/fb52kz0Y/19days.png&quot;/&gt;</li>
+</ul>
+<h2><strong>Part 1</strong></h2>
+<p>In this project, first, in order to analyze the relationship between the first 5,000 users who followed this hot topic(i.e. figured out if they were following other users in this 5000 users), I crawled the information of these 5,000 followers, including their id, city, gender, list of followers or list of followings. The number of each user's followings is basically at two or three hundred level, much less than the number of followers, so I chose to crawl the list of followings to analyze the social network.</p>
+<p>By simulating browser access in Python, I extracted data from weibo website. User's information exists in the XHR packets, so by process the data in XHR packets, I extracted these 5000 users' information.</p>
+<ul>
+<li>XHR packet structure in Weibo
+&lt;img src=&quot;https://i.postimg.cc/CxKH2DKD/XHR-packet-structure.png&quot;/&gt;</li>
+</ul>
+<p>Due to the large amount of data and the slow crawl speed, it is necessary to continue crawling at the interrupted position after the program is interrupted, without having to re-crawl again. In order to crawl the information of 5,000 users, the program need to access more than 100,000 pages. I increased the speed of program by changing different user-agents and log-in user cookies, as well as using proxy ip addresses.</p>
+<p>Picture below shows the social relationship of these 5000 followers, where green points stand for the user who is isolated(i.e. is not following or followed by other 4999 users), and yellow points in small connected components stand for people who are following each other. A line connecting two points indicates one people is following the other.</p>
+<ul>
+<li>Social Relationship of first 5000 followers
+&lt;img src=&quot;https://i.postimg.cc/HnnfTJZJ/follower_relationship.png&quot;/&gt;</li>
+</ul>
+<p>The average degree of this social network is 0.026. It's very sparse. The relationship between the 5,000 users is very scattered and there is almost no connection. As you can see, most of users in these 5000 followers are isolated, because there are about 354,000 users in total who follow these hot topic and 5000 users are just a small part of it. And people who like same comics may have same hobbies, but not necessarily follow each other.</p>
+<p>Pictures below shows the distribution of gender and cities in these 5000 users. As not all users have filled in their information, I finally got 4,963 users' information of city and gender.</p>
+<ul>
+<li>Gender distribution in first 5000 followers
+&lt;img src=&quot;https://i.postimg.cc/RVSc3fK8/gender.png&quot;/&gt;</li>
+<li>Cities distribution in first 5000 followers
+&lt;img src=&quot;https://i.postimg.cc/BZcTQNLH/cities.png&quot;/&gt;</li>
+</ul>
+<h2><strong>Part 2</strong></h2>
+<p>In this part, I concerned about the users who post weibo posts in this hot topic. I extracted the first 1000 posts that were posted most recently in this hot topic, and extracted information of their authors. Picture below shows the social network of these 580 users.</p>
+<ul>
+<li>Social Network of first 580 users who recently posted posts
+&lt;img src=&quot;https://i.postimg.cc/NFnZFgSd/user_relationship.png&quot;/&gt;</li>
+</ul>
+<p>The average degree of this network is 5.702, it can be seen that the degree of most points are small, except for the biggest green point in the middle. The biggest green point, the entry degree of this point is 339, indicating that 399 of the 580 people are following him/her. After checking the id of this point, it is found that this user is the host of the topic and the author of the comic :D.</p>
+<p>I also analyzed the post-time of these 1000 most recent posts, picture below shows its trend. The number of Weibo releases has changed over time. Basically, the number of posts every day is in the dozens. There is no tendency for the megatrend to decay or rise, indicating that the hot topic has been relatively stable, which is consistent with the nature of the topic itself.</p>
+<ul>
+<li>Post Trend in this hot topic
+&lt;img src=&quot;https://i.postimg.cc/rm9Dcnnp/timetrend.png&quot;/&gt;</li>
+</ul>
+</div></header><footer class="post__foot u-cf"><ul class="post__tag u-fl"><li class="post__tag__item"><a class="post__tag__link" href="/tags/python/">python</a></li><li class="post__tag__item"><a class="post__tag__link" href="/tags/data-analysis/">data analysis</a></li></ul></footer></article><!--include plugins/reward.pug--><!--include plugins/livere.pug--></main><footer class="foot"><div class="foot-copy">&copy; 2017-2018 Xuanyi Yu</div></footer><script src="/js/scroller.js"></script><script src="/js/main.js"></script></body></html>
