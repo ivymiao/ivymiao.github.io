@@ -341,10 +341,12 @@ canvas {
 .echo h1 {
   font-size: 30px;
   font-size: 1.875rem;
+  color: #823030;
 }
 .echo h2 {
   font-size: 24px;
   font-size: 1.5rem;
+  color: #823030;
 }
 .echo h3 {
   font-size: 18px;
@@ -360,7 +362,7 @@ canvas {
   margin: 1em 0;
   font-size: 16px;
   font-size: 1rem;
-  text-align: left;
+  text-align: justify;
   line-height: 1.5;
 }
 .echo address,
@@ -622,10 +624,10 @@ canvas {
   margin-bottom: 30px;
 }
 .archive-title {
-  margin: 1.6em;
+  margin: 3px;
   text-align: center;
-  font-size: 25.6px;
-  font-size: 1.6rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: normal;
 }
 .comments {
@@ -809,6 +811,10 @@ canvas {
 }
 .post__main img {
   margin: 1.6em auto;
+}
+.post__main img.icon {
+  width: 40px;
+  margin: 0 0px;
 }
 .post__foot {
   padding: 8px 50px;
