@@ -306,7 +306,7 @@ canvas {
 }
 .u-fr {
   float: right;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 .u-hidden {
   display: none !important;
@@ -581,19 +581,22 @@ canvas {
 }
 .head {
   padding: 0 0px;
-  height: 120px;
+  height: 150px !important;
   background-image: url("/img/head.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   box-sizing: border-box;
+  box-shadow: 0 0 1px #ccc;
 }
 .head-title {
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: normal;
-  margin-top: 92px;
-  margin-left: 80px;
+  position: relative;
+  top: 115px;
+  margin-left: 45px;
   color: #d98785;
+  height: inherit;
 }
 .head-title > a {
   color: #d98785;
@@ -608,8 +611,9 @@ canvas {
   display: inline-block;
   font-size: 20px;
   font-size: 1.25rem;
-  margin-top: 92px;
-  margin-left: 40px;
+  position: relative;
+  top: 115px;
+  margin-left: 30px;
 }
 .head-nav__link {
   color: #d98785;
@@ -997,11 +1001,12 @@ canvas {
     line-height: inherit;
   }
   .head {
-    height: 65px !important;
+    background-size: 100% 100%;
+    height: 30%;
   }
   .head-title {
     float: left;
-    margin-left: 40px;
+    margin-left: 5%;
   }
   .head-nav {
     float: right;
@@ -1012,11 +1017,14 @@ canvas {
   }
   .u-fr {
     float: right;
-    margin-right: 40px;
+    margin-right: 5%;
+    position: relative;
+    top: 90%;
   }
   .head-title {
     font-size: 12px !important;
-    margin-top: 48px;
+    position: relative;
+    top: 50%;
   }
   .main {
     margin-top: 20px;
@@ -1049,8 +1057,8 @@ canvas {
     margin: 5px;
   }
   .post__title {
-    font-size: 20px;
-    font-size: 1.25rem;
+    font-size: 18px;
+    font-size: 1.125rem;
   }
   .post__main blockquote,
   .post__main .highlight {
