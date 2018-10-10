@@ -669,7 +669,7 @@ canvas {
 }
 ::-webkit-scrollbar-thumb {
   -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
-  background-color: #000;
+  background-color: #eea9a9;
 }
 .right p {
   text-align: right;
@@ -1002,7 +1002,9 @@ canvas {
   }
   .head {
     background-size: 100% 100%;
-    height: 30%;
+    height: 0 !important;
+    padding-top: 21.43%;
+    position: relative;
   }
   .head-title {
     float: left;
@@ -1017,14 +1019,11 @@ canvas {
   }
   .u-fr {
     float: right;
-    margin-right: 5%;
-    position: relative;
-    top: 90%;
+    margin-right: 18px;
   }
   .head-title {
-    font-size: 12px !important;
-    position: relative;
-    top: 50%;
+    font-size: 15px !important;
+    top: -21px;
   }
   .main {
     margin-top: 20px;
@@ -1034,16 +1033,14 @@ canvas {
     margin-top: 80px;
     text-align: center;
   }
-  .head-nav {
-    margin-top: 45px;
-  }
   .head-nav__item {
     margin: 0 5px;
     margin-left: 0;
-    font-size: 12px !important;
+    font-size: 15px !important;
+    top: -21px;
   }
   .post {
-    margin-top: 50px;
+    margin-top: 22px;
   }
   .post__head.archive,
   .post__head {
