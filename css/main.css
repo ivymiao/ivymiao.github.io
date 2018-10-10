@@ -754,6 +754,7 @@ canvas {
   font-weight: normal;
   font-family: 'icon';
   color: #823030;
+  text-align: justify;
 }
 .post__title > a {
   color: #823030;
@@ -804,6 +805,7 @@ canvas {
 .post__main h1 {
   font-size: 25.6px;
   font-size: 1.6rem;
+  text-align: justify;
 }
 .post__main h2 {
   font-size: 22.4px;
